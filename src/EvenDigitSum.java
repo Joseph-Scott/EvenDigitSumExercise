@@ -26,7 +26,20 @@ public class EvenDigitSum {
             return -1;
         }
 
+        int sum = 0;
 
+        while (number > 0) {
+
+            int digit = number % 10;
+            number /= 10;
+
+            if (digit % 2 == 0) {
+                sum += digit;
+            }
+
+        }
+
+        return sum;
 
     }
 
